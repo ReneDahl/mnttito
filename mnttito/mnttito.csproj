@@ -320,13 +320,37 @@
     <Content Include="config\Lang\sv-SE.user.xml" />
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
+    <Content Include="Content\all.css" />
+    <Content Include="Content\all.min.css" />
     <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\brands.css" />
+    <Content Include="Content\brands.min.css" />
+    <Content Include="Content\Images\builder.png" />
+    <Content Include="Content\Images\cover.jpg" />
+    <Content Include="Content\Custom.css" />
+    <Content Include="Content\fontawesome.css" />
+    <Content Include="Content\fontawesome.min.css" />
+    <Content Include="Content\regular.css" />
+    <Content Include="Content\regular.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\solid.css" />
+    <Content Include="Content\solid.min.css" />
+    <Content Include="Content\sticky-footer-navbar.css" />
+    <Content Include="Content\svg-with-js.css" />
+    <Content Include="Content\svg-with-js.min.css" />
+    <Content Include="Content\v4-shims.css" />
+    <Content Include="Content\v4-shims.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -345,12 +369,6 @@
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-reboot.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.css.map" />
-    <Content Include="Content\bootstrap-grid.min.css.map" />
-    <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -438,6 +456,21 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.eot" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -465,11 +498,10 @@
     <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <Content Include="Views\Partials\BlockList\Default.cshtml" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Homepage.cshtml" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <Content Include="Views\Masterpage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -482,6 +514,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

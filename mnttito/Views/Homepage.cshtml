@@ -1,7 +1,50 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Homepage>
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @using ContentModels = Umbraco.Web.PublishedModels;
 @{
-    Layout = _ViewStar
+    Layout = "Masterpage.cshtml";
 }
 
-<p>hej</p>
+<div class="jumbotron rounded-0 text-center" >
+    <div class="container text-white">
+        <h1 class="display-4">Overskrift</h1>
+        <p class="lead">Brød tekst her</p>
+        <hr class="my-4">
+       
+        <p class="lead ">
+            <a class="btn btn-warning btn-lg text-white col-md-6 rounded-pill" href="#" role="button"><i class="fa-solid fa-phone text-white"></i>&ensp; +45 55445588</a>
+        </p>
+    </div>
+   
+</div>
+
+<section class="section-height">
+
+    <div class="container">
+
+        <p class="text-center pt-5 "><b>Du har projektet, vi har mandskabet.</b></p>
+        <p class="text-center">Det bliver ikke nemmere</p>
+        <hr class="bg-primary col-2" />
+        <p class="text-center">
+            Aenean vulputate, justo scelerisque iaculis malesuada, ipsum urna hendrerit velit, quis rhoncus dolor metus ornare nulla.
+        </p>
+
+
+        <div class="row">
+            <div class="col-sm-4 mx-auto bg-dark ">
+                <!-- Column content -->
+                <p class="text-center pt-5"><b>Kvalitet</b></p>
+          
+            </div>
+            <div class="col-sm-4 mx-auto bg-light">
+                <!-- Column content -->
+                dd
+            </div>
+            <div class="col-sm-4 mx-auto bg-dark">
+                <!-- Column content -->
+                dd
+            </div>
+        </div>
+    </div>
+
+   
+</section>

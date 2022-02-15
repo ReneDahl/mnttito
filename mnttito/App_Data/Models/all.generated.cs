@@ -6,7 +6,7 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "a57eea11d4cbb9eb")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "10c90bb23adaeba7")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -56,6 +56,32 @@ namespace Umbraco.Web.PublishedModels
 
 		// ctor
 		public Homepage(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+	}
+
+	/// <summary>Masterpage</summary>
+	[PublishedModel("masterpage")]
+	public partial class Masterpage : PublishedContentModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		public new const string ModelTypeAlias = "masterpage";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Masterpage, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public Masterpage(IPublishedContent content)
 			: base(content)
 		{ }
 

@@ -1,0 +1,94 @@
+﻿﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Custom.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="~/Content/sticky-footer-navbar.css" rel="stylesheet" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+</head>
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg  navbar-custom">
+        <a class="navbar-brand" href="#">
+            <img src="~/Content/Images/builder.png" width="30" height="30" alt="">
+        </a>
+        <a class="navbar-brand" href="#">MNT Tito</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Forside <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Referencer</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ydelser
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+
+                <i class="fa-solid fa-arrow-right-to-bracket text-white"></i>
+                <a class="nav-link text-white" href="#">Log ind</a>
+            </form>
+
+        </div>
+    </nav>
+    <!--Content Holder-->
+    <main role="main">
+        @RenderBody()
+
+    </main>
+
+    <div class="footer">
+        <div class="container">
+
+            <div class="float-left">
+
+                Copyright 2022 | MNT TITO ApS
+            </div>
+
+            <div class="float-right d-none d-sm-block">
+                <a href="/om-os" class="btn btn-link text-white">Facebook link</a>
+                <a href="/retunering" class="btn btn-link text-white">Linkedin link</a>
+                <i class="fa-brands fa-facebook"></i>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
