@@ -37,7 +37,11 @@
 .section-height {
 
     min-height:600px;
-    background-color:#E8E8E8;
+
+}
+
+.section-coler {
+    background-color: #E8E8E8;
 }
 
 

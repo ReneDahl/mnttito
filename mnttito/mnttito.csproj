@@ -300,6 +300,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\FaIconpicker\controllers\faIconPicker.controller.js" />
+    <Content Include="App_Plugins\FaIconpicker\controllers\faIconPicker.dialog.controller.js" />
+    <Content Include="App_Plugins\FaIconpicker\css\main.css" />
+    <Content Include="App_Plugins\FaIconpicker\resources\faIconResources.js" />
+    <Content Include="App_Plugins\FaIconpicker\views\faIconPicker.dialog.html" />
+    <Content Include="App_Plugins\FaIconpicker\views\faIconPicker.html" />
     <Content Include="config\grid.editors.config.js" />
     <Content Include="config\Lang\cs-CZ.user.xml" />
     <Content Include="config\Lang\da-DK.user.xml" />
@@ -336,6 +342,7 @@
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\brands.css" />
     <Content Include="Content\brands.min.css" />
+    <Content Include="Content\Icons\telephone-fill.svg" />
     <Content Include="Content\Images\builder.png" />
     <Content Include="Content\Images\cover.jpg" />
     <Content Include="Content\Custom.css" />
@@ -369,6 +376,7 @@
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="App_Plugins\FaIconpicker\package.manifest" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -473,7 +481,9 @@
     <Content Include="webfonts\fa-brands-400.eot" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\HomepageController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\HomepageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="config\imageprocessor\security.config" />
@@ -516,6 +526,7 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Views\Homepage\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <PropertyGroup>

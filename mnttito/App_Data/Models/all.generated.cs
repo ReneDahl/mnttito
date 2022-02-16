@@ -6,7 +6,7 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "10c90bb23adaeba7")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "feb8562eebcb9804")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -60,6 +60,55 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+
+		///<summary>
+		/// BodyText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("bodyText")]
+		public virtual string BodyText => this.Value<string>("bodyText");
+
+		///<summary>
+		/// BodyText for Cover image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("bodyTextCoverImage")]
+		public virtual string BodyTextCoverImage => this.Value<string>("bodyTextCoverImage");
+
+		///<summary>
+		/// Cover image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("coverImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops CoverImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("coverImage");
+
+		///<summary>
+		/// Headline
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("headline")]
+		public virtual string Headline => this.Value<string>("headline");
+
+		///<summary>
+		/// Headline for Cover image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("headlineCoverImage")]
+		public virtual string HeadlineCoverImage => this.Value<string>("headlineCoverImage");
+
+		///<summary>
+		/// Phonenumber for Cover image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("phonenumberForCoverImage")]
+		public virtual string PhonenumberForCoverImage => this.Value<string>("phonenumberForCoverImage");
+
+		///<summary>
+		/// ServicesText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("servicesText")]
+		public virtual string ServicesText => this.Value<string>("servicesText");
 	}
 
 	/// <summary>Masterpage</summary>
@@ -86,6 +135,53 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+	}
+
+	/// <summary>Services</summary>
+	[PublishedModel("services")]
+	public partial class Services : Homepage
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		public new const string ModelTypeAlias = "services";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Services, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public Services(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("content")]
+		public virtual string Content => this.Value<string>("content");
+
+		///<summary>
+		/// Icon
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("icon")]
+		public virtual object Icon => this.Value("icon");
+
+		///<summary>
+		/// Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("title")]
+		public virtual string Title => this.Value<string>("title");
 	}
 
 	/// <summary>Folder</summary>
