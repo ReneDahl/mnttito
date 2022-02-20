@@ -1,5 +1,11 @@
-﻿﻿
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = null;
+}
+
+
 <!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="utf-8" />
@@ -7,16 +13,13 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link href="~/Content/Custom.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    
+    <link href="~/Content/sticky-footer-navbar.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="~/Content/sticky-footer-navbar.css" rel="stylesheet" />
     <script src="~/Scripts/modernizr-2.8.3.js"></script>
 </head>
 <body>
-
-
-
-    <nav class="navbar navbar-expand-lg  navbar-custom">
+    <nav class="navbar navbar-expand-lg  navbar-custom ">
         <a class="navbar-brand" href="#">
             <img src="~/Content/Images/builder.png" width="30" height="30" alt="">
         </a>
@@ -55,7 +58,6 @@
 
         </div>
     </nav>
-    <!--Content Holder-->
     <main role="main">
         @RenderBody()
 
@@ -80,15 +82,10 @@
 
 
         </div>
-    </div>
+        </div>
 
-
-
-    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
-
-
-
+        <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
 </body>
 </html>

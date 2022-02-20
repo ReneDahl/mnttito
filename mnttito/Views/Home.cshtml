@@ -1,0 +1,127 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<mnttito.ViewModels.ServiceViewModel>
+
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout = "Masterpage.cshtml";
+
+
+}
+
+
+
+
+
+<div class="jumbotron rounded-0 justify-content-center" >
+      <div class="overlay"></div>
+    <div class="container text-white">
+        <div class="col">
+            <h1 class="display-4">Jumbotron</h1>
+        </div>
+      
+      
+        <p class="lead">This is  a jumbotron created using the bootstrap 4</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-warning btn-lg col-md-6 rounded-pill text-white" href="#" role="button"><i class="fa-solid fa-phone text-white"></i> + 45 55 88 55 22</a>
+        </div>
+    </div>
+
+<div class="section-height section-coler">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-lg-12 text-center pb-4">
+                <b>   @Model.headingTextService</b>
+            </div>
+            <div class="col-lg-12 text-center pb-4">
+                @Model.titleTextService
+            </div>
+            <!--Hr line-->
+            <div class="col-lg-12">
+                <div class="col-3 mx-auto divider py-1 bg-primary"></div>
+            </div>
+
+
+         
+                    <div class="col-lg-12 text-center pt-4 pb-2">
+                
+
+                        @Model.bodyTextService
+
+                    </div>
+
+        
+
+
+            @if (Model.Services.Count > 0)
+            {
+                foreach (var item in @Model.Services)
+                {
+                    <div class=" col-lg-4  mx-auto ">
+                        <div class="text-center mt-3">
+                            <!--Borderbox-->
+
+                            <div class="border border-secondary d-block pt-5 bg-white">
+                                <p>
+                                    @item.heading
+                                </p>
+                                <div>
+                                    <i class="@item.icon">
+
+                                    </i>
+                                </div>
+                                <p class="pt-3">
+                                    @item.bodyText
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                }
+            }
+
+
+
+            <div class="col-lg-12 pb-5">
+
+            </div>
+        </div>
+    </div>
+</div>
+<section class="section-height">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-lg-12 text-center pb-4">
+                <b>Du har projektet, vi har mandskabet.</b>
+            </div>
+            <div class="col-lg-12">
+                <div class="col-3 mx-auto divider py-1 bg-primary"></div>
+            </div>
+
+            <div class=" col-lg-6  mx-auto ">
+                <div class="text-center mt-3">
+                    <!--Borderbox-->
+
+                    <div class="d-block pt-5 bg-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere iaculis pretium. Integer suscipit accumsan mauris, sit amet luctus justo fringilla nec. Cras vulputate leo at nulla tincidunt pulvinar. Nunc orci ex, bibendum ac ipsum ac, cursus mattis libero. Phasellus et tortor sit amet odio vestibulum placerat ut id metus. Aenean hendrerit odio sit amet metus euismod semper. Morbi ultricies enim vitae elementum commodo. Morbi non sem purus. Integer molestie hendrerit lacus vitae finibus.
+                    </div>
+
+                </div>
+            </div>
+
+            <div class=" col-lg-6  mx-auto pb-5">
+                <div class="text-center mt-3">
+                    <!--Borderbox-->
+
+                    <div class="d-block pt-5 bg-white">
+                        <a href="https://placeholder.com"><img src="https://via.placeholder.com/400"></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

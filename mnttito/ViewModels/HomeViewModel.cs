@@ -7,13 +7,11 @@ using Umbraco.Web.Models;
 
 namespace mnttito.ViewModels
 {
-    public class HomepageViewModel : ContentModel
+    public class HomeViewModel  : ContentModel
     {
-        public HomepageViewModel(IPublishedContent content) : base(content)
+        public HomeViewModel(IPublishedContent content) : base(content)
         {
 
         }
-
-        public string ThumbnailImageUrl { get; set; }
     }
 }

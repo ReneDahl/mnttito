@@ -1,20 +1,15 @@
 ﻿.jumbotron {
     background-image: url(Images/cover.jpg);
     background-size: cover;
-    height: 100%;
     border-radius: 0px;
     margin-bottom: 0px !important;
+    text-align: center;
 }
 
-
-.navbar-light .navbar-nav .nav-link {
-    color: red;
-}
 
 /* change the background color */
 .navbar-custom {
     background-color: #73C3f9;
-
 }
     /* change the brand and text color */
     .navbar-custom .navbar-brand,
@@ -33,11 +28,9 @@
     }
 
 
-    /**Sektion**/
+/**Sektion**/
 .section-height {
-
-    min-height:600px;
-
+    min-height: 600px;
 }
 
 .section-coler {
