@@ -26,6 +26,16 @@ namespace mnttito.ViewModels
         public string icon { get; set; }
         public string bodyText { get; set; }
 
+        //Cover section
+
+        public string coverTitle { get; set; }
+        public string coverLead { get; set; }
+
+        public string coverParagraph { get; set; }
+        public string coverPhoneNumber { get; set; }
+
+
+        //Service section
         public string headingTextService { get; set; }
         public string titleTextService { get; set; }
         public string bodyTextService { get; set; }

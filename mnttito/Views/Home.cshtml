@@ -15,14 +15,14 @@
       <div class="overlay"></div>
     <div class="container text-white">
         <div class="col">
-            <h1 class="display-4">Jumbotron</h1>
+            <h1 class="display-4"> @Model.coverTitle</h1>
         </div>
       
       
-        <p class="lead">This is  a jumbotron created using the bootstrap 4</p>
+        <p class="lead">@Model.coverLead</p>
         <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-warning btn-lg col-md-6 rounded-pill text-white" href="#" role="button"><i class="fa-solid fa-phone text-white"></i> + 45 55 88 55 22</a>
+        <p>@Model.coverParagraph</p>
+        <a class="btn btn-warning btn-lg col-md-6 rounded-pill text-white" href="#" role="button"><i class="fa-solid fa-phone text-white"></i> @Model.coverPhoneNumber</a>
         </div>
     </div>
 

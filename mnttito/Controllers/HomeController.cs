@@ -27,13 +27,25 @@ namespace mnttito.Controllers
             //get all content from root,we are loop thought all values..
             var rootContent = Umbraco.ContentAtRoot();
 
-            foreach (var item in rootContent)
+            if (rootContent != null)
             {
-                serviceViewModel.headingTextService = item.Value("headingTextService").ToString();
-                serviceViewModel.titleTextService = item.Value("titleTextService").ToString();
-                serviceViewModel.bodyTextService = item.Value("bodyTextService").ToString();
 
+                foreach (var item in rootContent)
+                {
+                    //cover section
+                    serviceViewModel.coverTitle = item.Value("coverTitle").ToString();
+                    serviceViewModel.coverLead = item.Value("coverLead").ToString();
+                    serviceViewModel.coverParagraph = item.Value("coverParagraph").ToString();
+                    serviceViewModel.coverPhoneNumber = item.Value("coverPhoneNumber").ToString();
+
+                    //service section
+                    serviceViewModel.headingTextService = item.Value("headingTextService").ToString();
+                    serviceViewModel.titleTextService = item.Value("titleTextService").ToString();
+                    serviceViewModel.bodyTextService = item.Value("bodyTextService").ToString();
+
+                }
             }
+
 
           
 

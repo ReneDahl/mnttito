@@ -52,6 +52,34 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string BodyTextService => this.Value<string>("bodyTextService");
 
 		///<summary>
+		/// Cover Lead
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("coverLead")]
+		public virtual string CoverLead => this.Value<string>("coverLead");
+
+		///<summary>
+		/// Cover Paragraph
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("coverParagraph")]
+		public virtual string CoverParagraph => this.Value<string>("coverParagraph");
+
+		///<summary>
+		/// Cover Phone Number
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("coverPhoneNumber")]
+		public virtual string CoverPhoneNumber => this.Value<string>("coverPhoneNumber");
+
+		///<summary>
+		/// Cover title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("coverTitle")]
+		public virtual string CoverTitle => this.Value<string>("coverTitle");
+
+		///<summary>
 		/// Heading Text Service
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
