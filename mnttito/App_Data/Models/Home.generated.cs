@@ -52,6 +52,13 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string BodyTextService => this.Value<string>("bodyTextService");
 
 		///<summary>
+		/// Cover image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("coverImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops CoverImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("coverImage");
+
+		///<summary>
 		/// Cover Lead
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]

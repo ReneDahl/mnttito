@@ -367,6 +367,10 @@
     <Content Include="Content\Images\cover.jpg" />
     <Content Include="Content\sticky-footer-navbar.css" />
     <Content Include="Global.asax" />
+    <Content Include="Media\3owfdpcw\builder.png" />
+    <Content Include="Media\kmilwsbb\cover2.jpg" />
+    <Content Include="Media\ov5bmbjr\cover.jpg" />
+    <Content Include="Media\Web.config" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -503,7 +507,6 @@
     <Content Include="config\imageprocessor\security.config" />
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
-    <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
     <Content Include="config\tinyMceConfig.config" />
     <Content Include="config\serilog.user.config" />

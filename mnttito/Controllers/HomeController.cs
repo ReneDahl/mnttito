@@ -15,13 +15,45 @@ namespace mnttito.Controllers
 {
     public class HomeController : RenderMvcController
     {
-       
+
+        private string GetCoverImage() 
+        {
+            string imageId = "";
+            string path = "";
+            var rootImage = Umbraco.MediaAtRoot();
+
+            foreach (var item in rootImage)
+            {
+
+                //finding the newest image, by created date.
+                foreach (var items in item.Children.OrderByDescending(g => g.CreateDate).Take(1))
+                {
+                    var folderName = "coverimage";
+
+                    if (folderName == items.Parent.Name)
+                    {
+                        imageId = items.Id.ToString();
+
+                        path = Umbraco.Media(imageId).Url;
+
+                    }
+
+
+                }
+
+            }
+            return path;
+      
+
+        }
 
         // GET: Home
         public override ActionResult Index(ContentModel model)
         {
 
-            var serviceViewModel = new ServiceViewModel();
+            
+
+              var serviceViewModel = new ServiceViewModel();
        
 
             //get all content from root,we are loop thought all values..
@@ -37,6 +69,10 @@ namespace mnttito.Controllers
                     serviceViewModel.coverLead = item.Value("coverLead").ToString();
                     serviceViewModel.coverParagraph = item.Value("coverParagraph").ToString();
                     serviceViewModel.coverPhoneNumber = item.Value("coverPhoneNumber").ToString();
+                    serviceViewModel.coverImage = GetCoverImage();
+
+
+
 
                     //service section
                     serviceViewModel.headingTextService = item.Value("headingTextService").ToString();

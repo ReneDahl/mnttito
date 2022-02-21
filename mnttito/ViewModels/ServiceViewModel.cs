@@ -34,6 +34,8 @@ namespace mnttito.ViewModels
         public string coverParagraph { get; set; }
         public string coverPhoneNumber { get; set; }
 
+        public string coverImage { get; set; }
+
 
         //Service section
         public string headingTextService { get; set; }
