@@ -38,13 +38,11 @@ namespace mnttito.Controllers
 
                     }
 
-
                 }
 
             }
             return path;
       
-
         }
 
         // GET: Home

@@ -11,21 +11,21 @@
 
 
 
-<div class="jumbotron rounded-0 justify-content-center" >
-      <div class="overlay"></div>
+<div class="jumbotron rounded-0 justify-content-center" style="background: url(@Model.coverImage) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+    <div class="overlay"></div>
     <div class="container text-white">
         <div class="col">
             <h1 class="display-4"> @Model.coverTitle</h1>
         </div>
-      
-      
+
+
         <p class="lead">@Model.coverLead</p>
         <hr class="my-4">
         <p>@Model.coverParagraph</p>
         <a class="btn btn-warning btn-lg col-md-6 rounded-pill text-white" href="#" role="button"><i class="fa-solid fa-phone text-white"></i> @Model.coverPhoneNumber</a>
-        </div>
-    @Model.coverImage
     </div>
+
+</div>
 
 <div class="section-height section-coler">
     <div class="container pt-5">
