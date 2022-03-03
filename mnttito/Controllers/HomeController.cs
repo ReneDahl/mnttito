@@ -13,8 +13,11 @@ using System;
 
 namespace mnttito.Controllers
 {
+    
     public class HomeController : RenderMvcController
     {
+        
+        ServiceViewModel serviceViewModel = new ServiceViewModel();
 
         private string GetCoverImage() 
         {
@@ -45,14 +48,10 @@ namespace mnttito.Controllers
       
         }
 
-        // GET: Home
+
         public override ActionResult Index(ContentModel model)
         {
 
-            
-
-              var serviceViewModel = new ServiceViewModel();
-       
 
             //get all content from root,we are loop thought all values..
             var rootContent = Umbraco.ContentAtRoot();
@@ -62,62 +61,50 @@ namespace mnttito.Controllers
 
                 foreach (var item in rootContent)
                 {
-                    //cover section
-                    serviceViewModel.coverTitle = item.Value("coverTitle").ToString();
-                    serviceViewModel.coverLead = item.Value("coverLead").ToString();
-                    serviceViewModel.coverParagraph = item.Value("coverParagraph").ToString();
-                    serviceViewModel.coverPhoneNumber = item.Value("coverPhoneNumber").ToString();
-                    serviceViewModel.coverImage = GetCoverImage();
+                    if (item != null)
+                    {
+                        //cover section
+                        serviceViewModel.coverTitle = item.Value("coverTitle").ToString();
+                        serviceViewModel.coverLead = item.Value("coverLead").ToString();
+                        serviceViewModel.coverParagraph = item.Value("coverParagraph").ToString();
+                        serviceViewModel.coverPhoneNumber = item.Value("coverPhoneNumber").ToString();
+                        serviceViewModel.coverImage = GetCoverImage();
 
 
 
 
-                    //service section
-                    serviceViewModel.headingTextService = item.Value("headingTextService").ToString();
-                    serviceViewModel.titleTextService = item.Value("titleTextService").ToString();
-                    serviceViewModel.bodyTextService = item.Value("bodyTextService").ToString();
+                        //service section
+                        serviceViewModel.headingTitle = item.Value("headingTitle").ToString();
+                        serviceViewModel.paragraph = item.Value("paragraph").ToString();
+                        serviceViewModel.bodyTextService = item.Value("bodyTextService").ToString();
+                    }
+
+                    else {
+                    
+                        //call errprpage--
+                    }
+
+               
 
                 }
             }
 
 
+            serviceViewModel.Services = MapService(serviceViewModel.Services);
+
           
-
-            //Returns all the services.
-            serviceViewModel.Services = MapServices(serviceViewModel.Services);
-
-            //Returns title, headline and content to the view.
-           
-
             return CurrentTemplate(serviceViewModel);
         }
 
-    
 
-
-
-        private IList<ServiceViewModel> MapServices(IList<ServiceViewModel> services)
+        private IList<ServiceViewModel> MapService(IList<ServiceViewModel> services)
         {
-
-            //add viewModel to it will be shown on cshtml page.
-
-            var list = Umbraco.ContentAtRoot().FirstOrDefault().ChildrenOfType("services")
-            .Where(x => x.IsVisible()).Take(3);
-
-            if (list != null)
+            var list = Umbraco.ContentAtRoot().FirstOrDefault(x => x.ContentType.Alias == "home");
+            foreach (var item in list.Children.Where(x=> x.ContentType.Alias== "services").Take(3))
             {
-                foreach (var item in list)
-                {
-
-
-                    foreach (var items in item.DescendantsOrSelf())
-                    {
-                        services.Add(new ServiceViewModel { heading = items.Value("heading").ToString(),icon = items.Value("icon").ToString(), bodyText= items.Value("bodyText").ToString() });
-                   
-                    }
-
-                }
-
+               
+                    services.Add(new ServiceViewModel { heading = item.Value("heading").ToString(), icon = item.Value("icon").ToString(), bodyText = item.Value("bodyText").ToString() });
+               
             }
 
             return services;

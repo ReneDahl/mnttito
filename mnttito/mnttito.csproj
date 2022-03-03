@@ -491,9 +491,7 @@
     <Compile Include="App_Data\Models\Folder.generated.cs" />
     <Compile Include="App_Data\Models\Home.generated.cs" />
     <Compile Include="App_Data\Models\Image.generated.cs" />
-    <Compile Include="App_Data\Models\Masterpage.generated.cs" />
     <Compile Include="App_Data\Models\Member.generated.cs" />
-    <Compile Include="App_Data\Models\Services.generated.cs" />
     <Compile Include="App_Data\Models\UmbracoMediaArticle.generated.cs" />
     <Compile Include="App_Data\Models\UmbracoMediaAudio.generated.cs" />
     <Compile Include="App_Data\Models\UmbracoMediaVectorGraphics.generated.cs" />

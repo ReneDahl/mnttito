@@ -19,9 +19,9 @@ using Umbraco.ModelsBuilder.Embedded;
 
 namespace Umbraco.Web.PublishedModels
 {
-	/// <summary>Services</summary>
+	/// <summary>Service</summary>
 	[PublishedModel("services")]
-	public partial class Services : Home
+	public partial class Services : PublishedContentModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant

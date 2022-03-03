@@ -45,21 +45,21 @@ namespace Umbraco.Web.PublishedModels
 		// properties
 
 		///<summary>
-		/// Body Text
+		/// Body Text Service
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
 		[ImplementPropertyType("bodyTextService")]
 		public virtual string BodyTextService => this.Value<string>("bodyTextService");
 
 		///<summary>
-		/// Cover image
+		/// Cover Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
 		[ImplementPropertyType("coverImage")]
 		public virtual global::Umbraco.Core.Models.MediaWithCrops CoverImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("coverImage");
 
 		///<summary>
-		/// Cover Lead
+		/// Cover lead
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
 		[ImplementPropertyType("coverLead")]
@@ -80,24 +80,38 @@ namespace Umbraco.Web.PublishedModels
 		public virtual string CoverPhoneNumber => this.Value<string>("coverPhoneNumber");
 
 		///<summary>
-		/// Cover title
+		/// Cover Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
 		[ImplementPropertyType("coverTitle")]
 		public virtual string CoverTitle => this.Value<string>("coverTitle");
 
 		///<summary>
-		/// Heading Text Service
+		/// Heading Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
-		[ImplementPropertyType("headingTextService")]
-		public virtual string HeadingTextService => this.Value<string>("headingTextService");
+		[ImplementPropertyType("headingTitle")]
+		public virtual string HeadingTitle => this.Value<string>("headingTitle");
 
 		///<summary>
-		/// Title Text Service
+		/// Logo Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
-		[ImplementPropertyType("titleTextService")]
-		public virtual string TitleTextService => this.Value<string>("titleTextService");
+		[ImplementPropertyType("logoImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops LogoImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("logoImage");
+
+		///<summary>
+		/// Logo Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("logoText")]
+		public virtual string LogoText => this.Value<string>("logoText");
+
+		///<summary>
+		/// Paragraph
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("paragraph")]
+		public virtual string Paragraph => this.Value<string>("paragraph");
 	}
 }

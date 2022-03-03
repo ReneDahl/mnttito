@@ -21,10 +21,7 @@ namespace mnttito.ViewModels
 
         }
 
-        public string heading { get; set; }
 
-        public string icon { get; set; }
-        public string bodyText { get; set; }
 
         //Cover section
 
@@ -38,9 +35,16 @@ namespace mnttito.ViewModels
 
 
         //Service section
-        public string headingTextService { get; set; }
-        public string titleTextService { get; set; }
+        public string paragraph { get; set; }
+        public string headingTitle { get; set; }
         public string bodyTextService { get; set; }
+
+
+        // Listview properties..
+        public string heading { get; set; }
+
+        public string icon { get; set; }
+        public string bodyText { get; set; }
 
         public IList<ServiceViewModel> Services { get; set; }
        
