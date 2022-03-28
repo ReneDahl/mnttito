@@ -19,5 +19,8 @@ namespace mnttito.ViewModels
 
 
         public string brandname { get; set; }
+
+        public string brandnamecolor { get; set; }
+        
     }
 }

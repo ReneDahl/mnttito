@@ -55,8 +55,8 @@ namespace Umbraco.Web.PublishedModels
 		/// Brandname Color
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
-		[ImplementPropertyType("brandnameColor")]
-		public virtual string BrandnameColor => this.Value<string>("brandnameColor");
+		[ImplementPropertyType("brandnamecolor")]
+		public virtual object Brandnamecolor => this.Value("brandnamecolor");
 
 		///<summary>
 		/// Logo

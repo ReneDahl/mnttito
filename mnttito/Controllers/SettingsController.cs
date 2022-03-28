@@ -27,7 +27,13 @@ namespace mnttito.Controllers
                 {
 
                     navigationViewModel.brandname = item.Value("brandname").ToString();
-                 
+
+                    navigationViewModel.brandnamecolor = item.Value("brandnamecolor").ToString();
+
+                  
+                    
+         
+
                 }
                   
             }
