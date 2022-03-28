@@ -39,6 +39,14 @@ namespace mnttito.ViewModels
         public string headingTitle { get; set; }
         public string bodyTextService { get; set; }
 
+        //About section
+        public string aboutTitle { get; set; }
+
+        public string aboutBodyText { get; set; }
+
+        public string aboutImage { get; set; }
+
+
 
         // Listview properties..
         public string heading { get; set; }

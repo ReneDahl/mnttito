@@ -3,8 +3,6 @@
 @using ContentModels = Umbraco.Web.PublishedModels;
 @{
     Layout = "Masterpage.cshtml";
-
-
 }
 
 
@@ -101,7 +99,7 @@
     <div class="container pt-5">
         <div class="row">
             <div class="col-lg-12 text-center pb-4">
-                <b>Du har projektet, vi har mandskabet.</b>
+                <b>@Model.aboutTitle</b>
             </div>
             <div class="col-lg-12">
                 <div class="col-3 mx-auto divider py-1 bg-primary"></div>
@@ -112,7 +110,7 @@
                     <!--Borderbox-->
 
                     <div class="d-block pt-5 bg-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere iaculis pretium. Integer suscipit accumsan mauris, sit amet luctus justo fringilla nec. Cras vulputate leo at nulla tincidunt pulvinar. Nunc orci ex, bibendum ac ipsum ac, cursus mattis libero. Phasellus et tortor sit amet odio vestibulum placerat ut id metus. Aenean hendrerit odio sit amet metus euismod semper. Morbi ultricies enim vitae elementum commodo. Morbi non sem purus. Integer molestie hendrerit lacus vitae finibus.
+                     @Model.aboutBodyText
                     </div>
 
                 </div>

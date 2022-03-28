@@ -1,7 +1,9 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @{
     Layout = null;
+  
 }
+
 
 
 <!DOCTYPE html>
@@ -19,46 +21,18 @@
     <script src="~/Scripts/modernizr-2.8.3.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg  navbar-custom ">
-        <a class="navbar-brand" href="#">
-            <img src="~/Content/Images/builder.png" width="30" height="30" alt="">
-        </a>
-        <a class="navbar-brand" href="#">MNT Tito</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Forside <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Referencer</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Ydelser
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
+    @*@Html.Partial("Options/_Navbar")*@
+
+    @{Html.RenderAction("NavigationBar", "Settings");}
+    @*@Html.Action("Index", "Settings");*@
 
 
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
 
-                <i class="fa-solid fa-arrow-right-to-bracket text-white"></i>
-                <a class="nav-link text-white" href="#">Log ind</a>
-            </form>
 
-        </div>
-    </nav>
     <main role="main">
+        <!--Macro here-->
+
         @RenderBody()
 
     </main>
@@ -82,10 +56,10 @@
 
 
         </div>
-        </div>
+    </div>
 
-        <script src="~/Scripts/jquery-3.4.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
-        <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
 </body>
 </html>

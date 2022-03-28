@@ -45,6 +45,27 @@ namespace Umbraco.Web.PublishedModels
 		// properties
 
 		///<summary>
+		/// About Body Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("aboutBodyText")]
+		public virtual string AboutBodyText => this.Value<string>("aboutBodyText");
+
+		///<summary>
+		/// About Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("aboutImage")]
+		public virtual global::Umbraco.Core.Models.MediaWithCrops AboutImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("aboutImage");
+
+		///<summary>
+		/// About title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
+		[ImplementPropertyType("aboutTitle")]
+		public virtual string AboutTitle => this.Value<string>("aboutTitle");
+
+		///<summary>
 		/// Body Text Service
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.17.2")]
